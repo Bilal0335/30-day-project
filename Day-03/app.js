@@ -120,4 +120,5 @@ nextBtn.addEventListener('click', () => {
   }
 });
 
-startQuiz(); // 👈 start quiz on page load
+startQuiz(); 
+
