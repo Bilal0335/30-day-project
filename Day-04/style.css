@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #002339;
+  color: #fff;
+}
+.container {
+  margin: 12%;
+  width: 90%;
+  max-width: 700px;
+}
+.display {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 26px;
+  border-radius: 5px;
+}
+.container h1 {
+  font-size: 45px;
+  font-weight: 500;
+}
+.container h1 span {
+  color: #019f55;
+  border-bottom: 4px solid #019f55;
+  padding-bottom: 7px;
+}
+.display img {
+  width: 30px;
+  cursor: pointer;
+}
+.display input {
+  outline: 0;
+  border: 0;
+  font-size: 24px;
+  width: 100%;
+}
+.container button img {
+  width: 28px;
+  margin-right: 10px;
+}
+
+.container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #019f55;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  padding: 16px 26px;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.range-control {
+  margin-bottom: 20px;
+}
+
+.range-control label {
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: inline-block;
+  color: #fff;
+  background: #019f55;
+  padding: 10px 26px;
+  border-radius: 5px;
+}
+
+.range-control input[type="range"] {
+  width: 50%;
+  margin-top: 15px;
+  -webkit-appearance: none; 
+  height: 8px;
+  background: #019f55;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* For Chrome / Safari */
+.range-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background: #fff;
+  /* border: 2px solid #019f55; */
+  cursor: pointer;
+  margin-top: -6px; /* aligns the thumb vertically */
+}
+
+/* For Firefox */
+/* .range-control input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #019f55;
+  cursor: pointer;
+} */
+
+/* For Firefox track */
+/* .range-control input[type="range"]::-moz-range-track {
+  background: #019f55;
+  height: 8px;
+  border-radius: 5px;
+} */
+
+@media (max-width: 768px) {
+  .container {
+    margin: 8%;
+  }
+
+  .container h1 {
+    font-size: 36px;
+  }
+
+  .display {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+
+  .display input {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .display img {
+    width: 28px;
+    align-self: flex-end;
+  }
+
+  .container button {
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+
+  .container button img {
+    width: 24px;
+    margin-right: 8px;
+  }
+
+  .range-control {
+    text-align: center;
+  }
+
+  .range-control label {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+
+  .range-control input[type="range"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .display {
+    padding: 12px;
+  }
+
+  .display input {
+    font-size: 18px;
+  }
+
+  .container button {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+
+  .range-control label {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+}
