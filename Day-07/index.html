@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
-        rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+  <!-- ✅ QR Code Library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  <script src="app.js" defer></script>
 </head>
-
 <body>
-    <div class="wrapper">
-        <input type="text" id="userInput" placeholder="enter  some text or url">
-        <div class="options">
-            <select name="" id="" class="sizeOptions">
-                <option value="100" selected>100 x 100 </option>
-                <option value="200">200 x 200</option>
-                <option value="300">300 x 300</option>
-            </select>
-            <input type="color" class="color-inp" id="BGColor">
-            <input type="color" class="color-inp" id="FGColor">
-        </div>
-        <div class="box">
-            <button id="sumbit" disabled>Generated</button>
-            <a href="#">Download</a>
-        </div>
-        <div class="container"></div>
+  <div class="wrapper">
+    <input type="text" id="userInput" placeholder="Enter some text or URL">
+    <div class="options">
+      <select class="sizeOptions">
+        <option value="100" selected>100 x 100</option>
+        <option value="200">200 x 200</option>
+        <option value="300">300 x 300</option>
+      </select>
+      <input type="color" class="color-inp" id="BGColor">
+      <input type="color" class="color-inp" id="FGColor">
     </div>
+    <div class="box">
+      <button id="submit" disabled>Generate</button> <!-- ✅ spelling fix -->
+      <a href="#" id="download" class="hide">Download</a>
+    </div>
+    <div class="container"></div>
+  </div>
 </body>
-
 </html>
