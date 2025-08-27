@@ -1,11 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    height: 100vh;
-    background: linear-gradient(#f3f3fb 50%,#3377df 50%);
+body {
+  height: 100vh;
+  background: linear-gradient(#f3f3fb 50%, #3377df 50%);
+}
+.wrapper {
+  padding: 5em 4em;
+  background: #ffffff;
+  width: 31.25em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.6em;
+  box-shadow: 0 1.5em 3em rgba(3, 21, 55, 0.3);
+}
+
+#userInput {
+  width: 100%;
+  outline: none;
+  border-bottom: 2px solid #000000;
+  font-size: 1em;
+  border: none;
+  padding: 0.5em 1em;
+  text-transform: capitalize;
+}
+.options {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+select {
+  width: 8em;
+  padding: 0.45em 0.9em;
+  background-color: #3377df;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 1.25em;
+  letter-spacing: 0.4px;
+  border-radius: 0.3em;
+}
+
+select::-ms-expand {
+  display: none;
+}
+select option {
+  background-color: #ffffff;
+  color: #377dff;
+  font-size: 1.12em;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+
+selected {
+  display: none;
+}
+.color-inp {
+  width: 3.1em;
+  height: 3.4em;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+.color-inp:-webkit-color-swatch {
+  border-radius: 0.03em;
+  border: 0.18em solid #191f3f;
+}
+.color-inp:-moz-color-swatch {
+  border-radius: 0.03em;
+  border: 0.18em solid #191f3f;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.box button,
+.box a {
+  padding: 0.8em 2em;
+  margin-top: 2em;
+  font-size: 1em;
+  border-radius: 0.5em;
+}
+.box button:disabled {
+  background-color: transparent;
+  color: #a3aab6;
+  border: 0.18em solid #a3aab6;
+}
+.box a {
+  background-color: #377dff;
+  text-decoration: none;
+  color: #ffffff;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.18em;
+}
+.hide {
+  display: none;
 }
